@@ -11,7 +11,7 @@ const Results = ({ results, className = "" }: Props) => {
     <div
       className={clsx({
         "flex flex-wrap justify-center": true,
-        [className]: className,
+        [className]: !!className,
       })}
     >
       {results.map((image) => (
